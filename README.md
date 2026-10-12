@@ -1,4 +1,4 @@
-# Ohros Global Youth Initiative (OGYI) – website
+# Ohrus Global Youth Initiative (OGYI) – website
 
 Plain HTML/CSS/JS. No build step.
 
@@ -12,7 +12,7 @@ Double-click `index.html`, or upload the whole folder to any static host (Netlif
 - `images/` – photos (free Unsplash licence). `collage.jpg` fills the big hero letters
 
 ## Common edits
-- Name: search and replace "OGYI" / "Ohros"
+- Name: search and replace "OGYI" / "Ohrus"
 - Colour: change `--orange` in `css/style.css`
 - Photos: replace files in `images/` keeping the same names
 - Donations/newsletter: the forms are placeholders. Connect a payment provider (e.g. Paystack, Flutterwave, Stripe) and a mailing list in `js/main.js`
