@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ohros Global Youth Initiative (OGYI)</title>
+<meta name="description" content="Ohros Global Youth Initiative (OGYI) is a youth-led, faith-friendly, non-denominational organisation empowering young people with practical, creative and business skills.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Instrument+Sans:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 40 40">
+    <circle cx="20" cy="26" r="9" fill="currentColor"/>
+    <g stroke="currentColor" stroke-width="3" stroke-linecap="round">
+      <line x1="20" y1="3" x2="20" y2="10"/><line x1="8.5" y1="7.5" x2="12" y2="13.5"/><line x1="31.5" y1="7.5" x2="28" y2="13.5"/>
+      <line x1="2" y1="17" x2="8.5" y2="20"/><line x1="38" y1="17" x2="31.5" y2="20"/>
+    </g>
+  </symbol>
+  <symbol id="arr" viewBox="0 0 12 12"><path d="M3 9L9 3M4 3h5v5" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="chev" viewBox="0 0 14 14"><path d="M3 5l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a href="#top" class="logo" aria-label="OGYI home"><svg style="color:var(--orange)"><use href="#mark"/></svg><span>OGYI</span></a>
+    <nav class="nav__links" aria-label="Main">
+      <a href="#about">About</a><a href="#programs">Programs</a><a href="#values">Values</a><a href="#teams">Teams</a><a href="#stories">Stories</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="nav__right">
+      <button class="lang" aria-label="Change language"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>EN<svg viewBox="0 0 14 14" style="width:10px"><use href="#chev"/></svg></button>
+      <a href="#contact" class="btn btn--ghost btn--sm">Get involved</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mnav" id="mnav" hidden>
+  <div class="mnav__top">
+    <span class="logo"><svg><use href="#mark"/></svg>OGYI</span>
+    <button class="mnav__close" id="mclose" aria-label="Close menu">×</button>
+  </div>
+  <a class="big" href="#about">About</a>
+  <a class="big" href="#programs">Programs</a>
+  <a class="big" href="#values">Values</a>
+  <a class="big" href="#teams">Teams</a>
+  <a class="big" href="#stories">Stories</a>
+  <a class="big" href="#contact">Contact</a>
+  <a class="big" href="#donate">Donate</a>
+  <a class="big big--cta" href="#contact">Get involved</a>
+</div>
+
+<main id="top">
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <h1 class="hero__title hero__title--one" aria-label="Ohros Global Youth Initiative"><span>Ohros</span></h1>
+      <p class="hero__kicker">Global Youth Initiative</p>
+      <p class="hero__sub">Unleash your gifts. Develop your purpose. Transform your world.</p>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--solid">Get involved</a>
+        <a href="#programs" class="btn btn--ghost">Our programs</a>
+      </div>
+      <div class="updates">
+        <a class="update" href="#impact">
+          <img src="images/comm.jpg" alt="Young people at a community gathering">
+          <div><div class="eyebrow">Community project</div><p>Word on the Street (WOTS), our community outreach project, is launching soon</p></div>
+          <span class="arrow"><svg><use href="#arr"/></svg></span>
+        </a>
+        <a class="update" href="#groups">
+          <img src="images/youth.jpg" alt="Young people celebrating together">
+          <div><div class="eyebrow">Youth group</div><p>Ignited Spirits: one of the OGYI youth groups</p></div>
+          <span class="arrow"><svg><use href="#arr"/></svg></span>
+        </a>
+        <a class="update" href="#groups">
+          <img src="images/class.jpg" alt="A young person reading in a classroom">
+          <div><div class="eyebrow">Youth group</div><p>Sublime Spirits: one of the OGYI youth groups</p></div>
+          <span class="arrow"><svg><use href="#arr"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="sec feature" id="about" style="padding-top:clamp(40px,6vw,80px)">
+    <div class="wrap">
+      <div class="eyebrow eyebrow--accent">Who we are</div>
+      <div class="feature__grid">
+        <div>
+          <h2 class="display">Helping youth discover <span class="hl">purpose</span></h2>
+          <div class="quotebox">
+            <img src="images/farm.jpg" alt="A young woman smiling while at work outdoors">
+            <blockquote>
+              <svg viewBox="0 0 34 26"><path fill="currentColor" d="M0 26V15C0 6.7 4.4 1.7 13 0l1.6 3.6C9.8 5 7.4 7.9 7 12h6v14H0zm20 0V15c0-8.3 4.4-13.3 13-15l1.6 3.6C29.8 5 27.4 7.9 27 12h6v14H20z"/></svg>
+              <q>Unleash your gifts. Develop your purpose. Transform your world.</q>
+              <cite>Ohros Global Youth Initiative</cite>
+            </blockquote>
+          </div>
+        </div>
+        <div class="feature__body">
+          <p>Ohros Global Youth Initiative (OGYI) is a youth-led, faith-friendly, non-governmental and non-denominational skill-building organisation. We empower young people with practical, creative and business skills.</p>
+          <p><strong>Our mission:</strong> to help youth discover purpose through ministry, mentorship and marketable talents. We inspire, equip and empower young people globally through a faith-informed youth ministry, offering life skills, digital education and talent development programs in physical hubs and online spaces.</p>
+          <div class="acc">
+            <details open><summary>Who we serve<svg><use href="#chev"/></svg></summary>
+              <p>Young people aged 13 to 25, in urban areas, including:</p>
+              <ul class="ticks"><li>Graduates</li><li>College and high-school students</li><li>Young people not in education, employment or training (NEET)</li><li>At-risk or underserved communities</li></ul>
+            </details>
+            <details><summary>Inclusion and diversity<svg><use href="#chev"/></svg></summary><p>We are big on inclusion and diversity. Every young person is welcome at OGYI, whatever their background or beliefs.</p></details>
+            <details><summary>How we deliver<svg><use href="#chev"/></svg></summary><p>Hybrid delivery: local youth hubs together with online workshops, so young people can take part in person or from wherever they are.</p></details>
+            <details id="groups"><summary>Our groups<svg><use href="#chev"/></svg></summary><p>OGYI young people meet in groups, including <strong>Ignited Spirits</strong> and <strong>Sublime Spirits</strong>.</p></details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="sec" id="impact" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2 class="display">Our <span class="hl">impact</span> so far</h2>
+        <p>We measure impact by the young people we serve, the skills and certifications they gain, their feedback and stories, and turnout at our community events.</p>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="eyebrow">Young people reached</div><div><p class="stat__num"><span data-count="7">7</span></p><p>Young people taking part in OGYI programs.</p></div></div>
+        <div class="stat"><div class="eyebrow">Lives impacted</div><div><p class="stat__num"><span data-count="10">10</span></p><p>Lives touched through mentoring, skills and faith.</p></div></div>
+        <div class="stat stat--accent"><div class="eyebrow">Volunteers &amp; mentors</div><div><p class="stat__num"><span data-count="4">4</span></p><p>People giving their time to guide young people.</p></div></div>
+        <div class="stat stat--teal"><div class="eyebrow">Community projects</div><div><p class="stat__num stat__num--word">WOTS</p><p>Word on the Street, launching soon.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="sec programs" id="programs">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2 class="display">Services &amp; <span class="hl">programs</span></h2>
+        <p>Practical, creative and business skills, delivered in local youth hubs and online workshops.</p>
+      </div>
+      <div class="progs">
+        <article class="prog"><span class="prog__tag">Digital skills</span><h3>Build for the digital world</h3><ul><li>Coding</li><li>Graphic design</li><li>Video editing</li></ul></article>
+        <article class="prog"><span class="prog__tag">Creative talent</span><h3>Grow the gift you carry</h3><ul><li>Music and poetry</li><li>Dance and drama</li><li>Photography</li><li>Tech and sports</li></ul></article>
+        <article class="prog"><span class="prog__tag">Life coaching</span><h3>Get ready for life and work</h3><ul><li>Faith-based motivation</li><li>CV help</li><li>Public speaking</li></ul></article>
+        <article class="prog prog--dark"><span class="prog__tag">Hybrid delivery</span><h3>Join in person or online</h3><ul><li>Local youth hubs</li><li>Online workshops</li></ul></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAGLINE BANNER -->
+  <section class="causes" aria-label="Our promise">
+    <img src="images/group.jpg" alt="A group of young women in bright headwraps standing together">
+    <div class="causes__words"><ul id="causes">
+      <li class="on">Unleash your gifts</li><li>Develop your purpose</li><li>Transform your world</li>
+    </ul></div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="sec values" id="values">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2 class="display">Our core values: <span class="hl">D.I.S.T.I.L.L</span></h2>
+        <p>DISTILL means separation, rooted in 2 Corinthians 6:17–18. Seven values shape how we lead, serve and grow.</p>
+      </div>
+      <ol class="distill">
+        <li><b>D</b><span>Discipline</span></li>
+        <li><b>I</b><span>Intentionality</span></li>
+        <li><b>S</b><span>Service</span></li>
+        <li><b>T</b><span>Transparency &amp; openness</span></li>
+        <li><b>I</b><span>Integrity</span></li>
+        <li><b>L</b><span>Learning</span></li>
+        <li><b>L</b><span>Love</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TEAMS -->
+  <section class="sec teams" id="teams" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec__head">
+        <h2 class="display">Find your <span class="hl">place</span></h2>
+        <p>Every gift has a place at OGYI. Join one of our teams and serve with what you do best.</p>
+      </div>
+      <div class="team-grid">
+        <article class="team team--orange"><h3>Talent &amp; skills</h3><ul><li>Music</li><li>Sports</li><li>Dance</li><li>Acting &amp; drama</li><li>Creative art</li><li>Media</li><li>Tech &amp; IT</li><li>Branding</li><li>Social media</li></ul></article>
+        <article class="team team--teal"><h3>Admin</h3><ul><li>Finance</li><li>Education</li></ul></article>
+        <article class="team team--yellow"><h3>Logistics</h3><ul><li>Medical</li><li>Events &amp; planning</li></ul></article>
+        <article class="team team--dark"><h3>Pastoral care</h3><ul><li>Pastoral</li><li>Prayer</li><li>Counselling</li><li>Welfare</li></ul></article>
+      </div>
+      <div class="teams__cta"><a href="#contact" class="btn btn--solid">Join a team</a></div>
+    </div>
+  </section>
+
+  <!-- STORIES -->
+  <section class="sec" id="stories" style="padding-top:0">
+    <div class="wrap center">
+      <h2 class="display">Hear our <span class="hl">stories</span></h2>
+      <p>Young people growing their gifts with OGYI. Their full stories are coming soon.</p>
+      <div class="strip" id="strip">
+        <button class="strip__item"><img src="images/p1.jpg" alt="Placeholder portrait"><div class="strip__cap"><b>Timothy</b><span>Story coming soon.</span></div></button>
+        <button class="strip__item"><img src="images/p2.jpg" alt="Placeholder portrait"><div class="strip__cap"><b>Pelumi</b><span>Story coming soon.</span></div></button>
+        <button class="strip__item"><img src="images/p3.jpg" alt="Placeholder portrait"><div class="strip__cap"><b>Isaacs</b><span>Sages Speak. Story coming soon.</span></div></button>
+        <button class="strip__item is-open"><img src="images/story.jpg" alt="Placeholder photo"><div class="strip__cap"><b>Lolade</b><span>Story coming soon.</span></div></button>
+        <button class="strip__item"><img src="images/p4.jpg" alt="Placeholder portrait"><div class="strip__cap"><b>Tomisin</b><span>Story coming soon.</span></div></button>
+        <button class="strip__item"><img src="images/p5.jpg" alt="Placeholder portrait"><div class="strip__cap"><b>Sharon</b><span>Story coming soon.</span></div></button>
+        <button class="strip__item"><img src="images/p7.jpg" alt="Placeholder portrait"><div class="strip__cap"><b>Precious</b><span>Story coming soon.</span></div></button>
+        <button class="strip__item"><img src="images/p8.jpg" alt="Placeholder portrait"><div class="strip__cap"><b>Pearl</b><span>Story coming soon.</span></div></button>
+      </div>
+      <div class="stories__cta">
+        <a href="#contact" class="btn btn--solid">Share your story</a>
+        <a href="#contact" class="btn btn--ghost">Join a group</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DONATE -->
+  <section class="donate" id="donate">
+    <img class="donate__bg" src="images/field.jpg" alt="">
+    <div class="wrap">
+      <form class="dcard" id="dform" novalidate>
+        <span class="soon">Opening soon</span>
+        <h3>Choose a donation</h3>
+        <div class="seg" role="group" aria-label="Frequency">
+          <button type="button" aria-pressed="true" data-freq="one-time">One-time</button>
+          <button type="button" aria-pressed="false" data-freq="monthly">Monthly</button>
+        </div>
+        <div class="amts" id="amts">
+          <button type="button" aria-pressed="false">£10</button><button type="button" aria-pressed="true">£15</button><button type="button" aria-pressed="false">£25</button>
+          <button type="button" aria-pressed="false">£50</button><button type="button" aria-pressed="false">£100</button><button type="button" aria-pressed="false">£500</button>
+        </div>
+        <label class="other" for="other"><span>£</span><input id="other" inputmode="decimal" placeholder="Other amount"><span>GBP</span></label>
+        <label class="fee" for="fee"><input type="checkbox" id="fee" checked><span>Yes, I'll add <b id="feeAmt">£0.75</b> to cover transaction fees.</span></label>
+        <button class="btn btn--solid" type="submit" id="dbtn">Donate £15.75 now</button>
+        <p class="dnote" id="dnote" aria-live="polite"></p>
+      </form>
+      <h2 class="display">Invest in a young person's <span class="hl-y">gifts</span></h2>
+      <p class="lead">Online giving is opening soon. Your support will fund skills training, mentoring and youth hubs.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="foot" id="contact">
+  <div class="wrap">
+    <div class="foot__top">
+      <div>
+        <svg class="foot__mark"><use href="#mark"/></svg>
+        <h3>Unleash your gifts. Develop your purpose. Transform your world.</h3>
+        <form class="news" id="news" novalidate>
+          <input type="email" id="email" placeholder="Your email address" aria-label="Email address">
+          <button class="btn" type="submit">Subscribe</button>
+        </form>
+        <p class="newsmsg" id="newsmsg" aria-live="polite"></p>
+      </div>
+      <div class="foot__cols">
+        <div><h4>Explore</h4><ul><li><a href="#about">About</a></li><li><a href="#programs">Programs</a></li><li><a href="#values">Values</a></li><li><a href="#stories">Stories</a></li></ul></div>
+        <div><h4>Get involved</h4><ul><li>Volunteer or mentor</li><li><a href="#teams">Join a team</a></li><li>Join a youth group</li><li>Church partnerships</li><li>Corporate sponsorship</li></ul></div>
+        <div><h4>Contact</h4><ul><li>+44 7398 572062</li><li>89 Barrington Road<br>Goring-by-Sea</li><li>Email and socials coming soon</li></ul></div>
+      </div>
+    </div>
+    <div class="foot__big" aria-hidden="true">Ohros</div>
+    <div class="foot__bottom"><span>© 2026 Ohros Global Youth Initiative (OGYI)</span><span>Youth-led · Faith-friendly · Non-denominational</span></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
