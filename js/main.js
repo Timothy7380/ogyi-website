@@ -7,7 +7,7 @@
 
   // causes rotator
   const words=[...document.querySelectorAll('#causes li')];let ci=0;
-  setInterval(()=>{words[ci].classList.remove('on');ci=(ci+1)%words.length;words[ci].classList.add('on')},2200);
+  setInterval(()=>{if(document.hidden)return;words[ci].classList.remove('on');ci=(ci+1)%words.length;words[ci].classList.add('on')},2200);
 
   // stories strip
   const items=[...document.querySelectorAll('.strip__item')];
