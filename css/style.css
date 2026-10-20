@@ -58,7 +58,7 @@ button{font:inherit;color:inherit;cursor:pointer}
 /* hero */
 .hero{padding-block:clamp(24px,4vw,48px) 56px;text-align:center}
 .hero__title{font-family:var(--display);text-transform:uppercase;font-size:clamp(80px,17vw,250px);line-height:1;letter-spacing:-.005em;margin:0 auto;
-  background-image:url("../images/collage.jpg");background-size:cover;background-position:center 30%;-webkit-background-clip:text;background-clip:text;color:transparent;
+  background-image:url("../images/collage.webp");background-size:cover;background-position:center 30%;-webkit-background-clip:text;background-clip:text;color:transparent;
   animation:pan 22s ease-in-out infinite alternate}
 @keyframes pan{from{background-position:20% 30%}to{background-position:80% 30%}}
 .hero__title span{display:block;padding-block:.02em}
@@ -439,3 +439,9 @@ section{scroll-margin-top:80px}
 .prog--dark .prog__ic{color:var(--yellow)}
 @media (max-width:1000px){.explore__list{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:480px){.explore__list{gap:4px}.ex{padding:16px 4px 14px;gap:8px}.ex__ic,.ex__ic svg{width:44px;height:44px}.ex__lb{font-size:13.5px}}
+
+/* ===== Performance: avoid constant repaints and costly effects ===== */
+.hero__title{animation:none;background-position:center 30%}
+.nav{background:var(--paper);backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:0 1px 0 var(--line)}
+.donate__bg{filter:none;transform:none}
+.strip__item{will-change:auto}
