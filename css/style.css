@@ -487,9 +487,11 @@ div.strip__item{cursor:pointer}
 @media (max-width:1200px) and (min-width:1001px){.updates{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:1000px){.updates{grid-template-columns:minmax(0,1fr);gap:18px}}
 
-/* stories strip: open card keeps the round pill shape instead of turning square */
+/* stories strip: open card becomes a perfect circle */
 @media (min-width:641px){
-  .strip__item.is-open{border-radius:999px}
-  .strip__item.is-open .strip__cap{padding:90px 18% 56px;text-align:center}
+  .strip{--sh:clamp(380px,40vw,500px)}
+  .strip__item{transition:flex-basis .6s cubic-bezier(.2,.8,.2,1),flex-grow .6s cubic-bezier(.2,.8,.2,1),border-radius .6s}
+  .strip__item.is-open{flex:0 0 var(--sh);height:var(--sh);border-radius:50%}
+  .strip__item.is-open .strip__cap{padding:90px 17% 54px;text-align:center}
   .strip__item.is-open .strip__cap span{margin-inline:auto}
 }
